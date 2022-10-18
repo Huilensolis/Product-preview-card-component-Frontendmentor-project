@@ -1,0 +1,14 @@
+@media (max-width:768px){
+    main{
+        flex-direction: column;
+        width: 88vw;
+        /* max-height: 90vh; */
+    }
+    .mobile{
+        display: block;
+        border-radius: 15px 15px 0 0;
+    }
+    .desktop{
+        display: none;
+    }
+}

@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 62.5%;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+:root{
+    /* ### Primary */
+        --Dark-cyan: hsl(158, 36%, 37%);
+    /* ### Neutral */
+        --Very-dark-blue: hsl(212, 21%, 14%);
+        --Dark-grayish-blue: hsl(228, 12%, 48%);
+        --White: hsl(0, 0%, 100%);
+
+    /* backgrownd color */
+        --pink: #F3EAE3;
+    /* ### text */
+        --paragraph-size: 0.8rem;
+        --Fraunces-font: 'Fraunces', serif;
+        --fraunces-weight: 700;
+        --montserrat-font: 'Montserrat', sans-serif;
+    /* --montserrat-weight: 500, 700; */
+}
+p{
+    font-size: var(--paragraph-size);
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
+main{
+    background-color: var(--White);
+    width: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: #0000000d 15px 18px 20px 12px;
+}
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+    width: 50%;
+    border-radius: 15px 0 0 15px;
+}
+.principal-container{
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.text h1{
+    margin: 20px 0;
+    font-size: 2rem;
+    font-family: var(--Fraunces-font);
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+    line-height: 32px;
+}
+.text p:nth-child(3){
+    line-height: 20px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.price p:first-child{
+    font-family: var(--Fraunces-font);
+    font-size: 2rem;
+    color: var(--Dark-cyan);
+    margin-right: 20px;
+}
+.price p:nth-child(2){
+    text-decoration: line-through;
+}
+button{
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: var(--White);
+    font-family: var(--montserrat-font);
+    font-weight: 700;
+}
